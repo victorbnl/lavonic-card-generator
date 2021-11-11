@@ -40,13 +40,17 @@ function generate() {
             ctx.drawImage(background, 0, 0)
 
             // Draw text informations
-            ctx.font = "20px Cascadia Mono"
-            ctx.fillText(name, 339, 136)
-            ctx.fillText(coordinates, 450, 175)
-            ctx.fillText(birth_place, 463, 215)
-            ctx.fillText(birth_date, 463, 253)
-            ctx.fillText(region, 396, 288)
-            ctx.fillText(expiration_date, 460, 327)
+            var cascadiaMonoFont = new FontFace('Cascadia Mono', 'url(../assets/fonts/CascadiaMono.ttf)');
+            cascadiaMonoFont.load().then(function(font) {
+                document.fonts.add(font);
+                ctx.font = "20px Cascadia Mono"
+                ctx.fillText(name, 339, 136)
+                ctx.fillText(coordinates, 450, 175)
+                ctx.fillText(birth_place, 463, 215)
+                ctx.fillText(birth_date, 463, 253)
+                ctx.fillText(region, 396, 288)
+                ctx.fillText(expiration_date, 460, 327)
+            });
 
             // Draw picture
             ctx.drawImage(picture, 43, 119, 191, 233)
