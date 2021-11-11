@@ -14,25 +14,26 @@
     <div class="sidebar">
         <form>
             <label for="name">Pseudo</label>
-            <input type="text" id="name">
+            <input type="text" name="name" id="name">
             <label for="coordinates">Coordonnées</label>
-            <input type="text" id="coordinates">
+            <input type="text" name="coordinates" id="coordinates">
             <label for="birth_place">Lieu de naissance</label>
-            <input type="text" id="birth_place">
+            <input type="text" name="birth_place" id="birth_place">
             <label for="birth_date">Date de naissance</label>
-            <input type="text" id="birth_date">
+            <input type="text" name="birth_date" id="birth_date">
             <label for="department">Département</label>
-            <input type="text" id="department">
+            <input type="text" name="department" id="department">
             <label for="expiration_date">Date d'expiration</label>
-            <input type="text" id="expiration_date">
+            <input type="text" name="expiration_date" id="expiration_date">
             <label for="picture">Photo (rapport de 191:233)</label>
-            <input type="file" id="picture" accept="image/*">
+            <input type="file" name="picture" id="picture" accept="image/*">
             <div class="form-buttons">
                 <button type="button" onclick="generate()">Générer</button>
                 <button type="button" onclick="save()">Sauvegarder</button>
                 <button type="button" onclick="init()">Reset</button>
             </div>
         </form>
+        <p>Voir <a href="visa.html">générateur de visa</a></p>
     </div>
     <div class="result-container">
         <div>
