@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/colors.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/cascadia.css">
+    <script src="js/script.js"></script>
+    <title>Générateur de cartes lavoniques</title>
+</head>
+<body onload="init()">
+    <div class="sidebar">
+        <form>
+            <label for="name">Pseudo</label>
+            <input type="text" id="name">
+            <label for="coordinates">Coordonnées</label>
+            <input type="text" id="coordinates">
+            <label for="birth_place">Lieu de naissance</label>
+            <input type="text" id="birth_place">
+            <label for="birth_date">Date de naissance</label>
+            <input type="text" id="birth_date">
+            <label for="region">Région</label>
+            <input type="text" id="region">
+            <label for="expiration_date">Date d'expiration</label>
+            <input type="text" id="expiration_date">
+            <label for="picture">Photo (rapport de 191:233)</label>
+            <input type="file" id="picture" accept="image/*">
+            <div class="form-buttons">
+                <button type="button" onclick="generate()">Générer</button>
+                <button type="button" onclick="save()">Sauvegarder</button>
+                <button type="button" onclick="init()">Reset</button>
+            </div>
+        </form>
+    </div>
+    <div class="result-container">
+        <div>
+            <canvas id="result" width="662" height="396"></canvas>
+            <p>Votre code de sécurité est: <span id="security_code">00000</span></p>
+        </div>
+    </div>
+    <img src="assets/img/identity_card.jpg" id="identity_card_image" style="display: none;">
+</body>
+</html>

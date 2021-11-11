@@ -1,0 +1,54 @@
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: .5em;
+    font-weight: bold;
+}
+
+input {
+    margin-bottom: 1.2em;
+}
+
+input[type="text"] {
+    outline: none;
+    border: none;
+    background: none;
+    color: inherit;
+    border-bottom: solid 2px var(--clr-accent);
+    border-radius: 5px 5px 0 0;
+    padding: .7em;
+}
+
+input[type="text"]:focus {
+    background-color: rgba(0, 0, 0, 0.164);
+}
+
+input[type="file"]::file-selector-button,
+button,
+a.button {
+    border: none;
+    background: rgba(0, 0, 0, .2);
+    color: inherit;
+    border-radius: 5px;
+    padding: .7em;
+}
+
+button,
+a.button {
+    background-color: var(--clr-accent);
+}
+
+a.button {
+    text-decoration: none;
+    text-align: center;
+}
+
+.form-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+    width: 100%;
+}
