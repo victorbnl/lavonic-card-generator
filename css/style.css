@@ -38,4 +38,9 @@ body {
     display: grid;
     place-items: center;
     background-color: var(--clr-bg-alt);
+    padding: 2rem;
+}
+
+canvas {
+    max-width: 100%;
 }
