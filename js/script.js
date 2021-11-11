@@ -40,7 +40,7 @@ function generate() {
             ctx.drawImage(background, 0, 0)
 
             // Draw text informations
-            var cascadiaMonoFont = new FontFace('Cascadia Mono', 'url(../assets/fonts/CascadiaMono.ttf)');
+            var cascadiaMonoFont = new FontFace('Cascadia Mono', 'url(assets/fonts/CascadiaMono.ttf)');
             cascadiaMonoFont.load().then(function(font) {
                 document.fonts.add(font);
                 ctx.font = "20px Cascadia Mono"
