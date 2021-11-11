@@ -40,7 +40,7 @@ function generate() {
             ctx.drawImage(background, 0, 0)
 
             // Draw text informations
-            ctx.font = "20px Salutlol"
+            ctx.font = "20px Cascadia Mono"
             ctx.fillText(name, 339, 136)
             ctx.fillText(coordinates, 450, 175)
             ctx.fillText(birth_place, 463, 215)
