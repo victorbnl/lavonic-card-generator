@@ -44,3 +44,12 @@ body {
 canvas {
     max-width: 100%;
 }
+
+a {
+    text-decoration: none;
+    color: var(--clr-accent);
+}
+
+a:hover {
+    text-decoration: underline;
+}
