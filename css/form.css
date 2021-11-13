@@ -33,6 +33,7 @@ button {
     color: inherit;
     border-radius: 5px;
     padding: .7em;
+    cursor: pointer;
 }
 
 button {
