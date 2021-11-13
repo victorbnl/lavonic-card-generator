@@ -27,8 +27,7 @@ input[type="text"]:focus {
 }
 
 input[type="file"]::file-selector-button,
-button,
-a.button {
+button {
     border: none;
     background: rgba(0, 0, 0, .2);
     color: inherit;
@@ -36,14 +35,8 @@ a.button {
     padding: .7em;
 }
 
-button,
-a.button {
+button {
     background-color: var(--clr-accent);
-}
-
-a.button {
-    text-decoration: none;
-    text-align: center;
 }
 
 .form-buttons {
